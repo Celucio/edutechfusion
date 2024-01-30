@@ -1,58 +1,136 @@
 <template>
-  <div class="hello">
-    <h1>{{ msg }}</h1>
-    <p>
-      For a guide and recipes on how to configure / customize this project,<br>
-      check out the
-      <a href="https://cli.vuejs.org" target="_blank" rel="noopener">vue-cli documentation</a>.
-    </p>
-    <h3>Installed CLI Plugins</h3>
-    <ul>
-      <li><a href="https://github.com/vuejs/vue-cli/tree/dev/packages/%40vue/cli-plugin-babel" target="_blank" rel="noopener">babel</a></li>
-      <li><a href="https://github.com/vuejs/vue-cli/tree/dev/packages/%40vue/cli-plugin-eslint" target="_blank" rel="noopener">eslint</a></li>
-    </ul>
-    <h3>Essential Links</h3>
-    <ul>
-      <li><a href="https://vuejs.org" target="_blank" rel="noopener">Core Docs</a></li>
-      <li><a href="https://forum.vuejs.org" target="_blank" rel="noopener">Forum</a></li>
-      <li><a href="https://chat.vuejs.org" target="_blank" rel="noopener">Community Chat</a></li>
-      <li><a href="https://twitter.com/vuejs" target="_blank" rel="noopener">Twitter</a></li>
-      <li><a href="https://news.vuejs.org" target="_blank" rel="noopener">News</a></li>
-    </ul>
-    <h3>Ecosystem</h3>
-    <ul>
-      <li><a href="https://router.vuejs.org" target="_blank" rel="noopener">vue-router</a></li>
-      <li><a href="https://vuex.vuejs.org" target="_blank" rel="noopener">vuex</a></li>
-      <li><a href="https://github.com/vuejs/vue-devtools#vue-devtools" target="_blank" rel="noopener">vue-devtools</a></li>
-      <li><a href="https://vue-loader.vuejs.org" target="_blank" rel="noopener">vue-loader</a></li>
-      <li><a href="https://github.com/vuejs/awesome-vue" target="_blank" rel="noopener">awesome-vue</a></li>
-    </ul>
-  </div>
+  <section class="background-radial-gradient overflow-hidden">
+      <div class="container px-4 py-5 px-md-5 text-center text-lg-start my-4">
+          <div class="row gx-lg-5 align-items-center">
+              <div class="col-lg-6 mb-5 mb-lg-0" style="z-index: 10">
+                  <div class=" justify-content-center align-content-center " style="padding-left: 10%;">
+                      <img src="../assets/logo E blanco.png" class="img-fluid w-50">
+                  </div>
+                  <h1 class="my-5 display-5 fw-bold ls-tight" style="color: hsl(218, 81%, 95%)">
+                      EduTechFusion <br />
+                      <span style="color: #277ad3">Sistema Escolar</span>
+                  </h1>
+
+              </div>
+
+              <div class="col-lg-6 mb-5 mb-lg-0 position-relative">
+
+                  <div class="card bg-glass">
+                      <div class="card-body px-4 py-5 px-md-5">
+                          <form style="font-family: 'Prompt'; font-size: 15px;">
+                              <!-- Email input -->
+                              <div class="form-outline mb-4">
+                                  <input type="email" id="form3Example3" class="form-control" />
+                                  <label class="form-label" for="form3Example3">Usuario</label>
+                              </div>
+
+                              <!-- Password input -->
+                              <div class="form-outline mb-4">
+                                  <input type="password" id="form3Example4" class="form-control" />
+                                  <label class="form-label" for="form3Example4">Contraseña</label>
+                              </div>
+
+                              <!-- Checkbox -->
+                              <div class="d-flex justify-content-around  align-items-center mb-4">
+                                  <!-- Checkbox -->
+                                  <div class="form-check">
+                                      <input class="form-check-input" type="checkbox" value="" id="form1Example3"
+                                          checked />
+                                      <label class="form-check-label" for="form1Example3"> Recordar Contraseña </label>
+                                  </div>
+                                  <!-- Submit button -->
+                                  <button type="submit" class="btn btn-primary btn-block ">
+                                      Iniciar Sesión
+                                  </button>
+                              </div>
+
+
+
+                              <div class="divider d-flex align-items-center my-4">
+                                  <p class="text-center fw-bold mx-3 mb-0 text-muted">O</p>
+                              </div>
+
+                              <!-- Register buttons -->
+                              <div class="container-fluid ">
+                                  <div class="row">
+                                      <div class="col-6">
+                                          <h5>Registrarse</h5>
+                                          <span style="font-size: 12px">
+                                              Para acceder a esta página debe tener una cuenta primero. Contáctese con
+                                              secretaria para su matrícula
+                                          </span>
+                                      </div>
+                                      <div class="col-6">
+                                          <div class="d-flex justify-content-center pt-5 ps-5">
+                                              <button type="submit" class="btn btn-primary">
+                                                  Contactarse
+                                              </button>
+                                          </div>
+
+                                      </div>
+                                  </div>
+                              </div>
+
+                          </form>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </section>
+  <!-- Section: Design Block -->
 </template>
+<style>
+.background-radial-gradient {
+  background-color: hsl(218, 41%, 15%);
+  background-image: radial-gradient(650px circle at 0% 0%,
+          hsl(218, 41%, 35%) 15%,
+          hsl(218, 41%, 30%) 35%,
+          hsl(218, 41%, 20%) 75%,
+          hsl(218, 41%, 19%) 80%,
+          transparent 100%),
+      radial-gradient(1250px circle at 100% 100%,
+          hsl(218, 41%, 45%) 15%,
+          hsl(218, 41%, 30%) 35%,
+          hsl(218, 41%, 20%) 75%,
+          hsl(218, 41%, 19%) 80%,
+          transparent 100%);
+}
 
-<script>
-export default {
-  name: 'HelloWorld',
-  props: {
-    msg: String
-  }
+#radius-shape-1 {
+  height: 220px;
+  width: 220px;
+  top: -60px;
+  left: -130px;
+  background: radial-gradient(#001f6f, #277ad3);
+  overflow: hidden;
 }
-</script>
 
-<!-- Add "scoped" attribute to limit CSS to this component only -->
-<style scoped>
-h3 {
-  margin: 40px 0 0;
+#radius-shape-2 {
+  border-radius: 38% 62% 63% 37% / 70% 33% 67% 30%;
+  bottom: -60px;
+  right: -110px;
+  width: 300px;
+  height: 300px;
+  background: radial-gradient(#09006b, #1c8cfd);
+  overflow: hidden;
 }
-ul {
-  list-style-type: none;
-  padding: 0;
+
+.divider:after,
+.divider:before {
+  content: "";
+  flex: 1;
+  height: 1px;
+  background: #277ad3;
 }
-li {
-  display: inline-block;
-  margin: 0 10px;
+
+.divider p {
+  color: #277ad3 !important;
 }
-a {
-  color: #42b983;
+
+.bg-glass {
+  background-color: hsla(0, 0%, 100%, 0.9) !important;
+  backdrop-filter: saturate(200%) blur(25px);
 }
 </style>
+
